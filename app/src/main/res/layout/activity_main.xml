@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:label="Review Running Shoes"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+            android:id="@+id/maintoolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#ffff"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="25dp">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FB8C00"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:text="Review Running Shoes"/>
+
+            <ImageButton
+                    android:id="@+id/tb_about"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_person_black_24dp"
+                    android:background="@null"
+                    android:foregroundGravity="right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rv_sepatu"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>
